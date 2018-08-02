@@ -1,0 +1,25 @@
+﻿AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Streamdata.io Hacker News New Items Streaming to Amazon S3 Data Lake Using Lambda.
+Resources:
+  newFromHN:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs6.10
+      CodeUri: .
+      Description: Streamdata.io Hacker News New Items Streaming to Amazon S3 Data Lake Using Lambda.
+      MemorySize: 128
+      Timeout: 300
+      Policies:
+        - LambdaInvokePolicy:
+            FunctionName: streamdata-io-hacker-news-new
+        - S3CrudPolicy:
+            BucketName: streaming-data-lake
+      Environment:
+        Variables:
+          appToken: Streamdata.io-Application-Token
+          s3bucket: streaming-data-lake
+          targetFolder: hacker-news-data
+          targetUrl: 'https://hacker-news.firebaseio.com/v0/newstories.json?print=pretty'
+          userAgent: YourAppName/0.1 by YourCompanyName
