@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs6.10
-      CodeUri: .
+      CodeUri: s3://streamdata-serverless/streamdata-io-hacker-news-new/package.zip
       Description: Streamdata.io Hacker News New Items Streaming to Amazon S3 Data Lake Using Lambda.
       MemorySize: 128
       Timeout: 300

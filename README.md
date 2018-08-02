@@ -8,8 +8,8 @@ You will need a Streamdata.io account and application key to run this function, 
 - [Streamdata.io Account Signup](https://portal.streamdata.io/)
 - [Hacker News API](https://github.com/HackerNews/API)
 - [Example API Call](https://hacker-news.firebaseio.com/v0/newstories.json?print=pretty)
-- [AWS Serverless Application Repository](https://serverlessrepo.aws.amazon.com/#/applications/arn:aws:serverlessrepo:us-east-1:879370021840:applications~StreamData-IO-Reddit-Search)
-- [License: MIT License](https://github.com/streamdata-serverless/streamdata-io-basic-demo-stockmarket-prices/blob/master/LICENSE)
+- [AWS Serverless Application Repository](https://serverlessrepo.aws.amazon.com/#/applications/arn:aws:serverlessrepo:us-east-1:879370021840:applications~StreamData-IO-Hacker-News-New)
+- [License: MIT License](https://github.com/streamdata-serverless/streamdata-io-hacker-news-new/blob/master/LICENSE)
 
 ## Frequently Asked Questions:
 
